@@ -46,7 +46,7 @@
         <span class="hero-name-last">Gandhi</span>
       </h1>
       <p class="hero-lede">
-        PhD in Aerospace Engineering. I follow hard problems in computational mechanics — from topology optimization of fiber-reinforced composites to the simulation infrastructure that makes automated engineering design possible.
+        PhD in aerospace engineering. I work on hard problems in computational mechanics — from designing fiber composites with topology optimization to building the simulation tools behind automated engineering design.
       </p>
       <div class="hero-actions">
         <a href="#work" class="btn btn-primary">See the work</a>
@@ -70,16 +70,16 @@
             Started in mechanical engineering in Bengaluru. Got obsessed with how composites fail in Parma. Spent four years in Forlì inventing better ways to design them. Now in Tokyo, building the tools other engineers will use.
           </p>
           <p>
-            My PhD at the <strong>University of Bologna</strong> focused on geometry-projection methods for the topology optimization of additively manufactured, variable-stiffness composite laminates — a mouthful of a thesis title that boils down to: <em>given a 3D printer that lays down continuous fiber, what's the best way to route the fibers?</em> The methods I developed are published in <em>Computer Methods in Applied Mechanics and Engineering</em>, and they're being used on real parts — including components for the <strong>Ferrari 296GTB</strong> and the <strong>Emilia V</strong> solar vehicle that won the Sasol 2024 Cruiser Challenge.
+            My PhD at the <strong>University of Bologna</strong> had a long title, but it came down to one question: <em>given a 3D printer that lays down continuous fiber, what's the best way to route the fibers?</em> I built methods to answer that — published in <em>Computer Methods in Applied Mechanics and Engineering</em> — and they've been used on real parts, including components for the <strong>Ferrari 296GTB</strong> and the <strong>Emilia V</strong> solar car that won the Sasol 2024 Cruiser Challenge.
           </p>
           <p>
-            At <strong>Braid Technologies</strong> in Tokyo, I work on the mathematical models and simulation infrastructure that power automated design workflows for industrial R&amp;D clients. Day to day, that means finite element analysis across the full spectrum — linear, nonlinear, implicit, explicit — topology optimization, and integrating open-source solvers into a unified engine that design engineers actually want to use.
+            At <strong>Braid Technologies</strong> in Tokyo, I build the models and simulation tools behind automated design for industrial clients. In practice that's a lot of finite element analysis — linear and nonlinear — plus topology optimization, and pulling open-source solvers together into one engine that engineers actually want to use.
           </p>
           <p class="about-coda">
-            A thread runs through all of it — <em>geometry</em>. How you describe a shape determines what you can do with it. Geometry projection methods route fibers. NURBS and isogeometric analysis make the CAD model and the analysis model the same object. Even the corotational formulations I work with in nonlinear FEA are really geometry — the geometry of rotations. The more I do this work, the more I'm convinced the interesting questions in computational mechanics are geometric questions in disguise.
+            One idea ties it all together for me: <em>geometry</em>. How you describe a shape decides what you can do with it. The fiber-routing methods, the tools that make a CAD model and its analysis model the same object, even the way nonlinear FEA handles rotations — they all come back to geometry. The longer I do this, the more the interesting problems look geometric underneath.
           </p>
           <p class="about-coda about-coda-soft">
-            What else keeps me interested: math that reshapes matter, watching research show up in real cars, building tools that outlast the projects they were built for, and the messier truth that most weeks are about solving whatever's broken.
+            What keeps me going: seeing research end up in real cars, building tools that outlast the project they were made for, and the honest truth that most weeks are really just about fixing whatever broke.
           </p>
         </div>
         <aside class="about-card" aria-label="Quick facts">
@@ -99,15 +99,15 @@
         <span class="section-number">02</span>
         <h2 class="section-title">Current focus</h2>
       </div>
-      <p class="section-lede">Where my attention has been this season.</p>
+      <p class="section-lede">What I've been digging into lately.</p>
 
       <div class="now-grid">
 
         <article class="now-card now-card-lead">
           <span class="now-tag">The through-line</span>
-          <h3>Geometry as the substrate</h3>
+          <h3>It usually comes down to geometry</h3>
           <p>
-            The deeper I get into computational mechanics, the more I see geometry quietly running the show. Geometry projection methods turned out to be the right way to design composites because the design variables <em>were</em> geometric. Isogeometric analysis collapses CAD and FE into a single object because the shape <em>is</em> the basis. The corotational decomposition isolates rigid-body rotations from element deformation — also geometric. I'm spending most of my reading and prototyping time on this thread.
+            The longer I work in computational mechanics, the more geometry seems to be running things underneath. The composite methods worked because the design choices were really about shape. Isogeometric analysis lets a CAD model and its analysis model be the same object. Even the rotation handling in nonlinear FEA is geometry. Most of my reading and side projects right now follow this thread.
           </p>
           <div class="pills">
             <span class="pill">NURBS</span>
@@ -121,7 +121,7 @@
           <span class="now-tag">Method</span>
           <h3>Isogeometric analysis &amp; NURBS</h3>
           <p>
-            Working through Hughes-style IGA from the ground up — open knot vectors, basis construction, refinement strategies — and asking where it earns its keep against classical FE in problems with strong geometric content.
+            Learning isogeometric analysis from the ground up — knot vectors, basis functions, refinement — and working out where it really beats classical finite elements on geometry-heavy problems.
           </p>
         </article>
 
@@ -129,15 +129,15 @@
           <span class="now-tag">Method</span>
           <h3>Nonlinear shell mechanics</h3>
           <p>
-            The corotational formulation (Felippa &amp; Haugen, §3) and where it sits next to total- and updated-Lagrangian shells. Practical interest: shells that buckle, contact, and survive the analysis without solver babysitting.
+            How thin shells behave once things turn nonlinear — and how to model shells that buckle and touch without the solver falling over.
           </p>
         </article>
 
         <article class="now-card">
           <span class="now-tag">Foundations</span>
-          <h3>Function spaces for FE</h3>
+          <h3>The math under finite elements</h3>
           <p>
-            Revisiting Sobolev spaces and weak formulations with a working engineer's perspective — less about formal proofs, more about understanding which approximation choices are quietly costing accuracy.
+            Going back over the math that finite elements rest on — not for the proofs, but to see which modeling shortcuts quietly cost you accuracy.
           </p>
         </article>
 
@@ -145,7 +145,7 @@
           <span class="now-tag">Build</span>
           <h3>Simulation infrastructure</h3>
           <p>
-            Shipping building blocks at Braid — nonlinear statics, contact, constraints, mesh pipelines. The compounding effect of small, well-designed pieces that other engineers reach for without thinking is the part I find most satisfying.
+            Shipping the building blocks at Braid — nonlinear statics, contact, constraints, mesh pipelines. The part I like most is when small, well-made pieces just get used, without anyone having to think about them.
           </p>
         </article>
 
@@ -169,7 +169,7 @@
           <div class="timeline-what">
             <h3><span class="timeline-role">Senior Researcher</span> <span class="timeline-at">·</span> <a href="https://braid.tech/" target="_blank" rel="noopener">Braid Technologies K.K.</a></h3>
             <p>
-              Developing the mathematical models and finite-element building blocks behind automated engineering design, delivered to Tier-1 automotive and manufacturing clients. Day to day: nonlinear statics, contact, constraints, and buckling; new element formulations (thin shells, corotational kinematics); and stitching several open-source solvers — LS-DYNA, Kratos Multiphysics, MFEM — into one engine that design engineers actually want to use.
+              Building the models and finite-element pieces behind automated engineering design, for Tier-1 automotive and manufacturing clients. Day to day: nonlinear statics, contact, constraints, and buckling; new element formulations (thin shells, corotational kinematics); and bringing open-source solvers — LS-DYNA, Kratos Multiphysics, MFEM — together into one engine engineers actually want to use.
             </p>
             <div class="pills">
               <span class="pill">Nonlinear FEA</span>
@@ -190,7 +190,7 @@
           <div class="timeline-what">
             <h3><span class="timeline-role">Postdoctoral Researcher</span> <span class="timeline-at">·</span> University of Bologna</h3>
             <p>
-              Translational R&amp;D on topology optimization for continuous fiber-reinforced polymer components, bridging academic methods with industrial 3D-printing workflows.
+              Took topology-optimization research for continuous-fiber composites and made it work in real industrial 3D printing.
             </p>
             <ul>
               <li>Developed TO methods for CFRP targeting Markforged and 9tlabs printers within the <strong>ASCENT</strong> project.</li>
@@ -214,7 +214,7 @@
           <div class="timeline-what">
             <h3><span class="timeline-role">Research Associate</span> <span class="timeline-at">·</span> University of Parma</h3>
             <p>
-              First real immersion in computational composites. Modeled the thermo-mechanical response of shape memory alloys via UMAT subroutines in Abaqus, and developed a fiber optimization method to predict bistable laminate configurations. In parallel, worked on the initiation and evolution of delamination in composites using VCCT and cohesive-element techniques.
+              My first deep dive into computational composites. I modeled how shape-memory alloys respond to heat and stress (UMAT subroutines in Abaqus), worked out fiber layouts for bistable laminates, and modeled how composites start to delaminate and come apart (VCCT and cohesive elements).
             </p>
             <div class="pills">
               <span class="pill">Shape memory alloys</span>
@@ -234,7 +234,7 @@
           <div class="timeline-what">
             <h3><span class="timeline-role">Visiting Graduate Researcher</span> <span class="timeline-at">·</span> Coventry University</h3>
             <p>
-              A detour from solids into robotics that turned out to shape how I think about optimization. Developed A* and D* path-planning and obstacle-avoidance algorithms for a rover operating under kinematic and dynamic constraints, and implemented an online nonlinear controller based on Particle Swarm Optimization for trajectory traversal.
+              A detour into robotics that quietly changed how I think about optimization. I wrote path-planning and obstacle-avoidance algorithms (A* and D*) for a rover, and built a nonlinear controller — using particle swarm optimization — to keep it on track.
             </p>
             <div class="pills">
               <span class="pill">Path planning</span>
@@ -252,7 +252,7 @@
         <span class="section-number">04</span>
         <h2 class="section-title">Research &amp; projects</h2>
       </div>
-      <p class="section-lede">A selection. Most current Braid work is confidential — descriptions here stay intentionally generic.</p>
+      <p class="section-lede">A few highlights. Most of my current Braid work is confidential, so those notes stay vague on purpose.</p>
 
       <div class="project-grid">
 
@@ -260,7 +260,7 @@
           <span class="project-tag">Featured · Methods</span>
           <h3>Geometry projection for variable-stiffness composites</h3>
           <p>
-            A unified topology optimization framework for additively manufactured, multi-layered composite laminates with continuous fibers. Published in <em>CMAME</em> (2025). Designs the layout, orientation, and stiffness distribution of fibers in a single formulation.
+            One topology-optimization framework that designs the whole thing at once — fiber layout, orientation, and stiffness — for 3D-printed, multi-layer composite laminates. Published in <em>CMAME</em> (2025).
           </p>
           <div class="pills">
             <span class="pill">Topology optimization</span>
@@ -332,7 +332,7 @@
           <span class="project-tag">Confidential</span>
           <h3>Simulation infrastructure @ Braid</h3>
           <p>
-            Ongoing work building engineering-grade computational blocks on top of open-source FE solvers. Scope: contact, nonlinear statics, buckling, constraint modeling, and mesh-processing pipelines that feed into automated design workflows. Specifics under NDA.
+            Ongoing work building solid, reusable pieces on top of open-source FE solvers — contact, nonlinear statics, buckling, constraints, and mesh pipelines that feed automated design. Specifics under NDA.
           </p>
           <div class="pills">
             <span class="pill">FE integration</span>
