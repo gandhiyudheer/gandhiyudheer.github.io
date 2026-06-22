@@ -393,6 +393,84 @@ main {
   font-size: 1rem !important;
 }
 
+.about-coda-soft {
+  color: var(--ink-faint) !important;
+  font-size: 0.9375rem !important;
+  margin-top: 1rem !important;
+}
+
+/* ================================================================
+   NOW (Current focus)
+   ================================================================ */
+
+.now-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.25rem;
+}
+
+.now-card {
+  background: var(--bg-raised);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
+  transition: all 0.25s var(--ease);
+}
+
+.now-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.now-card-lead {
+  grid-column: 1 / -1;
+  background: var(--bg-sunken);
+  border-color: var(--accent);
+  padding: 2rem 2.25rem;
+}
+
+.now-tag {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  display: block;
+  margin-bottom: 0.75rem;
+}
+
+.now-card h3 {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  line-height: 1.25;
+  margin: 0 0 0.75rem;
+}
+
+.now-card-lead h3 {
+  font-size: 1.625rem;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.now-card p {
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--ink-soft);
+  margin: 0;
+}
+
+.now-card-lead p {
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.now-card em {
+  color: var(--ink);
+  font-style: italic;
+}
+
 .about-prose strong {
   font-weight: 500;
 }
