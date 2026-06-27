@@ -4,11 +4,11 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Yogesh Gandhi — Computational Mechanics</title>
-  <meta name="description" content="Yogesh Gandhi, PhD. Topology optimization, composites, and simulation infrastructure. Senior Researcher at Braid Technologies, Tokyo." />
+  <meta name="description" content="Yogesh Gandhi, PhD. Computational mechanics, finite element simulation, and design optimization. Senior Researcher at Braid Technologies, Tokyo." />
   <meta name="author" content="Yogesh Gandhi" />
 
   <meta property="og:title" content="Yogesh Gandhi — Computational Mechanics" />
-  <meta property="og:description" content="PhD in Aerospace Engineering. Topology optimization for additively manufactured composites. Currently at Braid Technologies, Tokyo." />
+  <meta property="og:description" content="PhD in Aerospace Engineering. Building a differentiable finite-element engine for automated engineering design. Currently at Braid Technologies, Tokyo." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://gandhiyudheer.github.io" />
 
@@ -46,7 +46,7 @@
         <span class="hero-name-last">Gandhi</span>
       </h1>
       <p class="hero-lede">
-        PhD in aerospace engineering. I work on hard problems in computational mechanics — from designing fiber composites with topology optimization to building the simulation tools behind automated engineering design.
+        PhD in aerospace engineering. I work on hard problems in computational mechanics — from design and topology optimization to building the differentiable simulation engine behind automated engineering design.
       </p>
       <div class="hero-actions">
         <a href="#work" class="btn btn-primary">See the work</a>
@@ -73,7 +73,7 @@
             My PhD at the <strong>University of Bologna</strong> had a long title, but it came down to one question: <em>given a 3D printer that lays down continuous fiber, what's the best way to route the fibers?</em> I built methods to answer that — published in <em>Computer Methods in Applied Mechanics and Engineering</em> — and they've been used on real parts, including components for the <strong>Ferrari 296GTB</strong> and the <strong>Emilia V</strong> solar car that won the Sasol 2024 Cruiser Challenge.
           </p>
           <p>
-            At <strong>Braid Technologies</strong> in Tokyo, I build the models and simulation tools behind automated design for industrial clients. In practice that's a lot of finite element analysis — linear and nonlinear — plus topology optimization, and pulling open-source solvers together into one engine that engineers actually want to use.
+            At <strong>Braid Technologies</strong> in Tokyo, I build a differentiable finite-element engine behind automated design for industrial clients. In practice that's a lot of finite element analysis — linear and nonlinear — element formulations including isogeometric shells, and gradient-based optimization with adjoint sensitivities, pulled together into one engine that engineers actually want to use.
           </p>
           <p class="about-coda">
             One idea ties it all together for me: <em>geometry</em>. How you describe a shape decides what you can do with it. The fiber-routing methods, the tools that make a CAD model and its analysis model the same object, even the way nonlinear FEA handles rotations — they all come back to geometry. The longer I do this, the more the interesting problems look geometric underneath.
@@ -145,7 +145,7 @@
           <span class="now-tag">Build</span>
           <h3>Simulation infrastructure</h3>
           <p>
-            Shipping the building blocks at Braid — nonlinear statics, contact, constraints, mesh pipelines. The part I like most is when small, well-made pieces just get used, without anyone having to think about them.
+            Shipping the building blocks at Braid — element formulations, nonlinear statics, contact, constraints, optimization sensitivities, mesh pipelines. The part I like most is when small, well-made pieces just get used, without anyone having to think about them.
           </p>
         </article>
 
@@ -167,9 +167,9 @@
             <span class="timeline-place">Tokyo, Japan</span>
           </div>
           <div class="timeline-what">
-            <h3><span class="timeline-role">Senior Researcher</span> <span class="timeline-at">·</span> <a href="https://braid.tech/" target="_blank" rel="noopener">Braid Technologies K.K.</a></h3>
+            <h3><span class="timeline-role">Senior Researcher</span> <span class="timeline-at">·</span> <a href="https://braid.tech/" target="_blank" rel="noopener">Braid Technologies</a></h3>
             <p>
-              Building the models and finite-element pieces behind automated engineering design, for Tier-1 automotive and manufacturing clients. Day to day: nonlinear statics, contact, constraints, and buckling; new element formulations (thin shells, corotational kinematics); and bringing open-source solvers — LS-DYNA, Kratos Multiphysics, MFEM — together into one engine engineers actually want to use.
+              Building the finite-element engine behind automated engineering design for industrial clients. Day to day: solid and shell element formulations (corotational and isogeometric Kirchhoff-Love shells), nonlinear statics, contact and constraints, and topology &amp; shape optimization with automatic-differentiation sensitivities — bringing commercial and open-source solvers (LS-DYNA, Kratos Multiphysics, MFEM) into one engine engineers actually want to use.
             </p>
             <div class="pills">
               <span class="pill">Nonlinear FEA</span>
@@ -184,23 +184,22 @@
 
         <li class="timeline-item">
           <div class="timeline-when">
-            <span class="timeline-date">Jan — Jun 2024</span>
+            <span class="timeline-date">Jan 2024 — Jun 2025</span>
             <span class="timeline-place">Forlì, Italy</span>
           </div>
           <div class="timeline-what">
             <h3><span class="timeline-role">Postdoctoral Researcher</span> <span class="timeline-at">·</span> University of Bologna</h3>
             <p>
-              Took topology-optimization research for continuous-fiber composites and made it work in real industrial 3D printing.
+              Took design-optimization research and made it work on real, additively-manufactured production parts.
             </p>
             <ul>
-              <li>Developed TO methods for CFRP targeting Markforged and 9tlabs printers within the <strong>ASCENT</strong> project.</li>
+              <li>Developed topology- and stress-based design-optimization methods for additively manufactured structural parts, from formulation to production hardware.</li>
               <li>Co-led design, analysis, and 3D printing of parts for the <strong>Emilia V</strong> solar vehicle — winner of the Sasol 2024 Cruiser Challenge.</li>
-              <li>Built a stress-based design framework for 3D-printed <strong>Ferrari 296GTB</strong> wing mechanism parts within the <strong>OptiFiber</strong> project, in collaboration with Ferrari.</li>
+              <li>Built a stress-based design framework for 3D-printed <strong>Ferrari 296GTB</strong> mechanism parts.</li>
             </ul>
             <div class="pills">
-              <span class="pill">CFRP design</span>
-              <span class="pill">Continuous-fiber 3D printing</span>
-              <span class="pill">Markforged / 9tlabs</span>
+              <span class="pill">Design optimization</span>
+              <span class="pill">Additive manufacturing</span>
               <span class="pill">Ferrari · Emilia collaborations</span>
             </div>
           </div>
@@ -214,12 +213,12 @@
           <div class="timeline-what">
             <h3><span class="timeline-role">Research Associate</span> <span class="timeline-at">·</span> University of Parma</h3>
             <p>
-              My first deep dive into computational composites. I modeled how shape-memory alloys respond to heat and stress (UMAT subroutines in Abaqus), worked out fiber layouts for bistable laminates, and modeled how composites start to delaminate and come apart (VCCT and cohesive elements).
+              My first deep dive into computational composites. I modeled how shape-memory alloys respond to heat and stress (UMAT subroutines in Abaqus), worked out fiber layouts for bistable laminates, and modeled how composites start to delaminate and come apart.
             </p>
             <div class="pills">
               <span class="pill">Shape memory alloys</span>
               <span class="pill">Bistable laminates</span>
-              <span class="pill">Delamination · VCCT</span>
+              <span class="pill">Delamination · fracture</span>
               <span class="pill">Abaqus UMAT</span>
               <span class="pill">Fortran</span>
             </div>
