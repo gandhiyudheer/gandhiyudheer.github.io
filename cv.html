@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Yogesh Gandhi — CV</title>
+<style>
+  @page { size: A4; margin: 14mm 16mm; }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; }
+  body {
+    font-family: "Latin Modern Roman", Georgia, "Times New Roman", serif;
+    color: #1a1a1a;
+    font-size: 10.2pt;
+    line-height: 1.34;
+  }
+  .name {
+    text-align: center;
+    font-size: 21pt;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+    margin: 0 0 2px;
+  }
+  .subtitle { text-align: center; font-size: 11pt; margin: 0; }
+  .tagline { text-align: center; font-size: 9.6pt; color: #444; margin: 2px 0 2px; }
+  .contact { text-align: center; font-size: 9.2pt; color: #333; margin: 0 0 2px; }
+  hr { border: none; border-top: 0.8px solid #bbb; margin: 9px 0 8px; }
+  h2 {
+    font-size: 11pt;
+    font-weight: 700;
+    margin: 12px 0 5px;
+    padding-bottom: 2px;
+    border-bottom: 0.8px solid #999;
+    text-transform: none;
+  }
+  .summary { text-align: justify; margin: 2px 0 0; }
+  ul { margin: 3px 0 6px; padding-left: 16px; }
+  li { margin: 1.5px 0; }
+  .skills dt { font-weight: 700; }
+  .skill-row { margin: 2.5px 0; }
+  .skill-row .label { font-weight: 700; }
+  .entry { margin: 6px 0; }
+  .entry-head { display: flex; justify-content: space-between; gap: 12px; }
+  .entry-head .role { font-weight: 700; }
+  .entry-head .date { color: #444; white-space: nowrap; font-style: italic; font-size: 9.4pt; }
+  .entry .org { font-style: italic; }
+  .muted { color: #444; }
+  .pub-meta { font-style: italic; color: #444; margin: 2px 0 5px; }
+  a { color: #1a1a1a; text-decoration: none; }
+  .edu-line { display: flex; justify-content: space-between; gap: 12px; margin: 3px 0; }
+  .edu-line .date { font-style: italic; color: #444; font-size: 9.4pt; white-space: nowrap; }
+  .edu-sub { font-style: italic; color: #444; margin: 0 0 3px; }
+  p { margin: 4px 0; }
+</style>
+</head>
+<body>
+
+  <div class="name">Yogesh Gandhi</div>
+  <div class="subtitle">PhD in Aerospace Engineering</div>
+  <div class="tagline">Computational Mechanics &middot; Finite Element Simulation &middot; Design Optimization</div>
+  <div class="contact">Tokyo, Japan &middot; gandhi.k.yogesh@gmail.com</div>
+  <div class="contact">gandhiyudheer.github.io &middot; github.com/gandhiyudheer &middot; ORCID 0000-0002-8330-8515</div>
+
+  <hr />
+
+  <p class="summary">
+    Computational scientist and mechanical/aerospace engineer with a PhD and seven years of research
+    and industrial experience across computational mechanics, finite element simulation, and engineering
+    design optimization. Work spans aerospace, automotive, and advanced manufacturing &mdash; from linear
+    and nonlinear structural analysis to building the numerical infrastructure and software behind
+    automated engineering design. First-author in <em>CMAME</em>; production work shipped on parts for
+    Ferrari and the winning Sasol 2024 solar vehicle. Currently developing the simulation engine behind
+    automated engineering design at Braid Technologies, Tokyo.
+  </p>
+
+  <h2>Technical skills</h2>
+  <div class="skills">
+    <div class="skill-row"><span class="label">Languages:</span> Python &middot; MATLAB &middot; Fortran &middot; Bash</div>
+    <div class="skill-row"><span class="label">Numerics &amp; FE:</span> FEM/FEA (linear &amp; nonlinear, implicit &amp; explicit) &middot; structural &amp; contact mechanics &middot; buckling &amp; stability &middot; dynamics &middot; multiscale modeling</div>
+    <div class="skill-row"><span class="label">Optimization:</span> design &amp; topology optimization (SIMP, geometry projection, CAD-based) &middot; gradient-based methods &middot; manufacturing &amp; design constraints</div>
+    <div class="skill-row"><span class="label">Solvers &amp; tools:</span> LS-DYNA &middot; Kratos Multiphysics &middot; MFEM &middot; Abaqus &middot; ANSYS &middot; SolidWorks &middot; GMSH</div>
+    <div class="skill-row"><span class="label">Systems:</span> Linux &middot; Git &middot; LaTeX &middot; scientific computing &amp; data analysis (NumPy, SciPy, JAX)</div>
+    <div class="skill-row"><span class="label">Spoken:</span> English (C1) &middot; Italian (B2) &middot; Japanese (learning)</div>
+  </div>
+
+  <h2>Experience</h2>
+
+  <div class="entry">
+    <div class="entry-head"><span class="role">Senior Researcher &mdash; <span class="org">Braid Technologies K.K., Tokyo, Japan</span></span><span class="date">Aug 2025 &ndash; Present</span></div>
+    <ul>
+      <li>Develop the mathematical models and FE building blocks that power Braid&rsquo;s automated design engine, serving Tier-1 automotive and manufacturing clients.</li>
+      <li>Built and integrated nonlinear-static, contact, and constraint modules; debugged convergence in 3D implicit buckling with simultaneous geometric, material, and contact nonlinearities.</li>
+      <li>Implemented new element formulations (thin shells, corotational kinematics) and orchestrate multi-solver strategies across LS-DYNA, Kratos Multiphysics, and MFEM.</li>
+      <li>Maintain mesh-processing pipelines spanning TRI3/TRI6, hex, and IGA-ready geometries.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="role">Postdoctoral Researcher &mdash; <span class="org">University of Bologna, Forl&igrave;, Italy</span></span><span class="date">Jan &ndash; Jun 2024</span></div>
+    <ul>
+      <li>Translated PhD-stage methods into production CFRP design workflows in the ASCENT and OptiFiber projects.</li>
+      <li>Delivered stress-based topology optimization for 3D-printed wing-mechanism parts of the Ferrari 296GTB.</li>
+      <li>Co-led design and additive manufacturing of structural parts for the Emilia V solar vehicle &mdash; winner of the Sasol 2024 Cruiser Challenge.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="entry-head"><span class="role">Research Associate &mdash; <span class="org">University of Parma, Parma, Italy</span></span><span class="date">Apr 2018 &ndash; Feb 2020</span></div>
+    <ul>
+      <li>Implemented thermo-mechanical UMAT subroutines (Abaqus) for shape memory alloys; derived fiber-layup optimization for bistable laminates.</li>
+      <li>Built VCCT and cohesive-element delamination models calibrated against experimental data.</li>
+    </ul>
+  </div>
+
+  <p class="muted"><strong>Earlier:</strong> Visiting Graduate Researcher, Coventry University, UK (2017) &mdash; path-planning (A*, D*) and nonlinear control (Particle Swarm Optimization) for autonomous rovers. Research collaborations with TU Delft, Politecnico di Torino, and Universit&agrave; di Padova (2021&ndash;2025) &mdash; CAD-based topology optimization, Carrera Unified Formulation for laminates, and additive process modeling.</p>
+
+  <h2>Education</h2>
+  <div class="edu-line"><span><strong>PhD, Aerospace Engineering</strong> &mdash; University of Bologna, Forl&igrave;, Italy</span><span class="date">2020 &ndash; 2024</span></div>
+  <div class="edu-sub">Geometry projection method for additively manufactured variable-stiffness continuous fiber-reinforced polymer structures.</div>
+  <div class="edu-line"><span><strong>MSc, Aerospace Engineering</strong> &mdash; University of Bologna, Forl&igrave;, Italy</span><span class="date">2015 &ndash; 2017</span></div>
+  <div class="edu-line"><span><strong>BEng, Mechanical Engineering</strong> &mdash; PES Institute of Technology, Bengaluru, India</span><span class="date">2010 &ndash; 2014</span></div>
+
+  <h2>Selected projects</h2>
+  <ul>
+    <li><strong>Geometry projection for variable-stiffness composites.</strong> Unified topology-optimization framework for additively manufactured composite laminates with continuous fibers; designs layout, orientation, and stiffness in one formulation. <em>CMAME</em>, 2025.</li>
+    <li><strong>Ferrari 296GTB wing mechanism (OptiFiber).</strong> Stress-based design framework for 3D-printed composite parts; topology-optimization methodology and experimental validation.</li>
+    <li><strong>Emilia V solar vehicle.</strong> Co-led structural design and additive manufacturing of components; first place at the Sasol 2024 Cruiser Challenge, South Africa.</li>
+    <li><strong>TO with Carrera Unified Formulation (with POLITO).</strong> Extended topology optimization via CUF for accurate through-thickness modeling of multilayered laminates.</li>
+  </ul>
+
+  <h2>Selected publication</h2>
+  <div class="pub-meta">126 citations &middot; h-index 5 &middot; i10-index 4 (Google Scholar, 2026)</div>
+  <p>Y. Gandhi, A. Arag&oacute;n, J. Norato, G. Minak. <em>A geometry projection method for the topology optimization of additively manufactured variable-stiffness composite laminates.</em> Computer Methods in Applied Mechanics and Engineering, 2025. doi:10.1016/j.cma.2024.117663</p>
+  <p class="muted">Full publication list at gandhiyudheer.github.io/#publications and ORCID.</p>
+
+  <h2>Teaching, mentoring &amp; service</h2>
+  <ul>
+    <li><strong>PhD co-supervisor</strong>, University of Bologna (2024 &ndash; present) &mdash; design framework for 3D-printed parts using Emilia V experimental data. <strong>MSc co-supervisor</strong> (2024) &mdash; stress-based TO for AM structures.</li>
+    <li><strong>Lecturer:</strong> MSc Mechanical Eng, University of Bologna (2023, 2024) &mdash; topology-optimization theory &amp; MATLAB; MSc Automotive Eng, Dallara Academy (2019) &mdash; composite failure &amp; delamination in Abaqus.</li>
+    <li><strong>Peer reviewer</strong> for Composite Structures and Additive Manufacturing.</li>
+  </ul>
+
+</body>
+</html>
