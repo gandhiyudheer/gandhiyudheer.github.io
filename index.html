@@ -67,16 +67,16 @@
       <div class="about-grid">
         <div class="about-prose">
           <p class="about-arc">
-            Started out as a mechanical engineer in Bengaluru. Fell for the way structures move under dynamic flow, enough to chase it into an aerospace MSc, and into the state-of-the-art vision-based navigation work behind my Coventry thesis. Then came a sharp turn into the numerical modelling of composites, the one that really stuck. It grew into a long research thread through Italy, and it's what brought me to Tokyo, building the tools other engineers get to use.
+            I started as a mechanical engineer in Bengaluru and got pulled toward how fluids and structures interact (aeroelasticity). That took me into an aerospace MSc, and then into the numerical modelling of structures and materials, which is the part that stuck. It grew into a long research thread through Italy, and it is what brought me to Tokyo, building tools other engineers use.
           </p>
           <p>
-            My PhD at the <strong>University of Bologna</strong> had a long title, but it came down to one question: <em>given a 3D printer that lays down continuous fiber, what's the best way to route the fibers?</em> I built methods to answer that, published in <em>Computer Methods in Applied Mechanics and Engineering</em>, and they've been used on real parts, including components for the <strong>Ferrari 296GTB</strong> and the <strong>Emilia V</strong> solar car that won the Sasol 2024 Cruiser Challenge.
+            My PhD at the <strong>University of Bologna</strong> came down to one question: <em>given a 3D printer that lays down continuous fiber, what is the best way to route the fibers?</em> I built methods to answer that, published in <em>Computer Methods in Applied Mechanics and Engineering</em>, and they have been used on real parts, including components for the <strong>Ferrari 296GTB</strong> and the <strong>Emilia V</strong> solar car that won the Sasol 2024 Cruiser Challenge.
           </p>
           <p>
-            At <strong>Braid Technologies</strong> in Tokyo, I build the differentiable finite-element engine underneath Braid's system for going from design intent to manufacturable geometry, instead of the manual draw-and-simulate loop. In practice that is a lot of finite element analysis, linear and nonlinear, element formulations including shells, gradient-based optimization with adjoint sensitivities, and the verification work that decides whether any of it can be trusted.
+            At <strong>Braid Technologies</strong> in Tokyo I build simulation software for automated engineering design. Day to day that means making the simulation fast enough, accurate enough and trustworthy enough that a design tool can rely on it, without an engineer checking every result by hand.
           </p>
           <p class="about-coda">
-            One idea ties it all together for me: <em>geometry</em>. How you describe a shape decides what you can do with it. The fiber-routing methods, the tools that make a CAD model and its analysis model the same object, even the way nonlinear FEA handles rotations, they all come back to geometry. The longer I do this, the more the interesting problems look geometric underneath.
+            One idea ties it together for me: <em>geometry</em>. How you describe a shape decides what you can do with it, in design, in analysis and in manufacturing. The longer I do this, the more the interesting problems look geometric underneath.
           </p>
           <p class="about-coda about-coda-soft">
             What keeps me going: seeing research end up in real cars, building tools that outlast the project they were made for, and the honest truth that most weeks are really just about fixing whatever broke.
@@ -107,13 +107,13 @@
           <span class="now-tag">The through-line</span>
           <h3>It usually comes down to geometry</h3>
           <p>
-            The longer I work in computational mechanics, the more geometry seems to be running things underneath. The composite methods worked because the design choices were really about shape. Isogeometric analysis lets a CAD model and its analysis model be the same object. Even the rotation handling in nonlinear FEA is geometry. Most of my reading and side projects right now follow this thread.
+            The longer I work in computational mechanics, the more geometry seems to be running things underneath. The design problems I have worked on keep turning out to be shape problems. Most of my reading and side projects right now follow that thread.
           </p>
           <div class="pills">
-            <span class="pill">NURBS</span>
-            <span class="pill">Isogeometric analysis</span>
-            <span class="pill">Geometry projection</span>
-            <span class="pill">CAD-FE integration</span>
+            <span class="pill">Geometry</span>
+            <span class="pill">Shape representation</span>
+            <span class="pill">CAD to analysis</span>
+            <span class="pill">Design optimization</span>
           </div>
         </article>
 
@@ -121,7 +121,7 @@
           <span class="now-tag">Method</span>
           <h3>Geometry and CAD to FE integration</h3>
           <p>
-            Where the geometry description and the analysis model stop being two different things. Isogeometric analysis and NURBS are the sharpest version of this, but the wider question is which shape representations let you analyse and optimize without translating between models and losing something each time.
+            Where the geometry description and the analysis model stop being two different things. The question I keep coming back to is which ways of describing a shape let you analyse and optimize it without translating between models and losing something each time.
           </p>
         </article>
 
@@ -169,7 +169,7 @@
           <div class="timeline-what">
             <h3><span class="timeline-role">Senior Researcher</span> <span class="timeline-at">·</span> <a href="https://braid.tech/" target="_blank" rel="noopener">Braid Technologies</a></h3>
             <p>
-              Building the finite-element engine underneath Braid's system for going from design intent to manufacturable geometry, in place of the manual draw-and-simulate loop. Day to day: solid and shell element formulations (Mindlin and thin shell, corotational and isogeometric Kirchhoff-Love shells), nonlinear statics, contact and constraints, and topology and shape optimization with adjoint and automatic-differentiation sensitivities. I own gradient correctness and verification across the engine: Taylor remainder and dot product tests, V&amp;V plans and analytical benchmark suites, and solid versus shell cross validation. Modal work too, from modal superposition and Galerkin projection through to per mode stress recovery. Commercial and open-source solvers (LS-DYNA, Kratos Multiphysics, MFEM) brought into one engine engineers actually want to use.
+              Building the finite-element engine underneath Braid's system for going from design intent to manufacturable geometry, in place of the manual draw-and-simulate loop. Day to day: solid and shell element formulations, nonlinear statics, contact and constraints, and topology and shape optimization with adjoint sensitivities. I also own verification across the engine, the work that decides whether a gradient or a stress result can be trusted, and the modal side, from mode shapes through to per mode stress recovery. Commercial and open-source solvers (LS-DYNA, Kratos Multiphysics, MFEM) brought into one engine engineers actually want to use.
             </p>
             <div class="pills">
               <span class="pill">Nonlinear FEA</span>
@@ -254,7 +254,7 @@
         <span class="section-number">04</span>
         <h2 class="section-title">Research &amp; projects</h2>
       </div>
-      <p class="section-lede">A few highlights. Most of my current Braid work is confidential, so those notes stay vague on purpose.</p>
+      <p class="section-lede">A few highlights. My current work at Braid is not written up here. If that is what interests you, <a href="#contact">reach out</a>.</p>
 
       <div class="project-grid">
 
@@ -331,10 +331,10 @@
         </article>
 
         <article class="project-card">
-          <span class="project-tag">Confidential</span>
+          <span class="project-tag">Ongoing</span>
           <h3>Simulation infrastructure @ Braid</h3>
           <p>
-            Ongoing work building the reusable pieces underneath that system on top of open-source FE solvers: element formulations, nonlinear statics, contact and constraints, modal superposition and per mode stress recovery, stress constrained shape optimization, and the gradient verification and V&amp;V that back them. Specifics under NDA.
+            Building the reusable pieces underneath that system on top of open-source FE solvers: element formulations, nonlinear statics, contact and constraints, modal superposition and per mode stress recovery, stress constrained shape optimization, and the gradient verification and V&amp;V that back them. Happy to talk through the details directly.
           </p>
           <div class="pills">
             <span class="pill">FE integration</span>
