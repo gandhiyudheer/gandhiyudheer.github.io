@@ -45,11 +45,8 @@
   .pub { margin:0 0 6px; break-inside:avoid; }
   .yr { color:var(--mut); }
   .note { color:var(--mut); font-size:8.6pt; margin-top:3px; }
-  .hint { background:#eef3fa; border:1px solid #cfdcee; color:#24405f; font-size:9pt;
-          padding:8px 11px; border-radius:5px; margin:0 0 18px; }
   @media print {
     body { padding:0; font-size:9.6pt; }
-    .hint { display:none; }
     a { color:inherit; }
     h2 { margin-top:13px; }
   }
@@ -57,8 +54,6 @@
 </style>
 </head>
 <body>
-
-<p class="hint">To regenerate <strong>cv.pdf</strong>: print this page to PDF, A4, background graphics off. Content comes from the master career profile v4, keep the two in step.</p>
 
 <header>
   <h1>Yogesh Gandhi</h1>
@@ -87,12 +82,10 @@
   <div class="where">Tokyo, Japan</div>
   <ul>
     <li>Build the differentiable finite element engine underneath Braid's system for going from design intent to manufacturable geometry, in place of the manual draw and simulate loop.</li>
-    <li><span class="lead">Element formulations.</span> Mindlin and thin shell elements, corotational kinematics, solid linear elastic elements.</li>
+    <li><span class="lead">Element formulations.</span> Mindlin and thin shell elements, corotational kinematics and solid linear elastic elements, plus the V&amp;V plans, analytical benchmarks and solid versus shell cross validation that verify them.</li>
     <li><span class="lead">Gradient correctness.</span> Discrete adjoint and shape sensitivities, verified by Taylor remainder convergence rate and dot product tests, with finite difference step size and Richardson extrapolation analysis.</li>
-    <li><span class="lead">Verification and validation.</span> Authored V&amp;V plans and analytical benchmark suites for the solid and thin shell solvers, derived from first principles before reading the code, plus solid versus shell cross validation including where the two must legitimately diverge.</li>
     <li><span class="lead">Modal dynamics.</span> Modal superposition, modal transformation and Galerkin projection, mode shapes, per mode stress recovery, modal mass normalization.</li>
-    <li><span class="lead">Stress constrained optimization.</span> Smooth aggregation of von Mises stress over a design surface, and a differentiable percentile reducer replacing a non differentiable hard maximum.</li>
-    <li><span class="lead">Optimizer internals and reproducibility.</span> Audited MMA against Svanberg's formulation from first principles and identified a frozen asymptote adaptation. Root caused run to run non determinism to floating point ordering amplified by optimizer move limits.</li>
+    <li><span class="lead">Optimization.</span> Stress constrained shape optimization, improvements to the gradient based optimizers themselves, and making optimization runs reproducible.</li>
     <li>Stack: LS-DYNA, Kratos Multiphysics, MFEM, Python, MATLAB.</li>
   </ul>
 </div>
